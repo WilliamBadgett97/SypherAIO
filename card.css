@@ -1,0 +1,125 @@
+* {
+  font-family: helvetica;
+}
+body {
+  position: relative;
+  height: 100%;
+}
+
+/*.Navbar {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
+  z-index: 100000;
+  position: relative;
+  top: 0;
+  margin: 1em;
+  left: 0;
+  color: #333;
+}*/
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  background-color: #024E60;
+}
+
+.card__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12em 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1em 1.5em rgba(0,0,0,.45);
+  transition: .3s all;
+  padding-bottom: 2.5em;
+  width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card__head {
+  padding: 2em 0;
+  background-image: linear-gradient(to right top, #0d0d0d, #181818, #212121, #2b2b2b, #353535);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  /*margin-bottom: 3em;*/
+}
+
+.card__heading {
+  font-size: 2.25em;
+  font-family: helvetica;
+}
+.card__subheading {
+  font-size: 1.75em;
+}
+
+.card__price {
+  /*background-color: #1b5f6f;*/
+  background-color: #F8F9FA;
+  padding: 1em 0;
+  margin-bottom: 4em;
+}
+
+.card__cost {
+  font-size: 2.25em;
+  background-color: #fff;
+  color: #024E60;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: -.45em;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.card__cost__desc {
+  max-width: 70%;
+  margin: .5em auto;
+  color: #111;
+}
+
+.card__desc {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.card__desc:last-of-type{
+  margin-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .card__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+  }
+
+  .card {
+    margin-bottom: 5em;
+  }
+}
